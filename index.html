@@ -2,19 +2,19 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tienda Tecnológica</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #f0f0f0; }
-        .producto { border: 2px solid #333; padding: 20px; margin: 20px; display: inline-block; background: white; border-radius: 10px; }
-        h1 { color: #2c3e50; }
-    </style>
+    <title>ElectroShop Chile</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>🛍️ Tech & Home Store</h1>
-    <div class="producto">
-        <h2>Monitor 4K</h2>
-        <p>Precio: $150.000</p>
-        <button onclick="alert('Producto agregado al carrito')">Comprar ahora</button>
-    </div>
+    <header>
+        <h1>ElectroShop Chile</h1>
+        <div id="resumen-carrito" class="nav-carrito">
+            <h2>Tu Carrito</h2>
+            <div id="contenido-carrito"></div>
+        </div>
+        <input type="text" id="buscador" placeholder="¿Qué buscas hoy?">
+    </header>
+    <main id="lista-productos"></main>
+    <script src="js/script.js"></script>
 </body>
 </html>
